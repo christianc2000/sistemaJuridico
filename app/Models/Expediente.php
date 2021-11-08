@@ -16,7 +16,7 @@ class Expediente extends Model
 
     //relacion de 1 a muchos
     public function documentoJudicials(){
-        return $this->hasMany(Expediente::class);
+        return $this->hasMany(DocumentoJudicial::class);
     }
     //relacion inversa de 1 a muchos
     public function abogado(){

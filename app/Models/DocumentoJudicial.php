@@ -28,6 +28,6 @@ class DocumentoJudicial extends Model
     }
     //relación uno a muchos polimorfica
     public function documentos(){
-        return $this->morphMany(Documento::class, 'documenteable');
+        return $this->morphMany(Documento::class, "documenteable");
     }
 }

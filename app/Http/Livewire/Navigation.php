@@ -2,12 +2,17 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Expediente;
 use Livewire\Component;
+
 
 class Navigation extends Component
 {
+
     public function render()
     {
-        return view('livewire.navigation');
+        $Expedientes=Expediente::all();
+
+        return view('livewire.navigation',compact('Expedientes'));
     }
 }

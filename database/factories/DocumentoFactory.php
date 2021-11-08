@@ -15,7 +15,7 @@ class DocumentoFactory extends Factory
     {
         return [
             //almacenaremos las imagenes en public->storage,  primer parametro direccion,ancho, alto de la imagen
-            'url'=> 'documentos_Judicial/'.$this->faker->image('public/storage/documento_Judicial',640,480,null,false)
+            'url'=> 'documentos_Judicial/'.$this->faker->image('public/storage/documentos_Judicial',640,480,null,false)
         ];
     }
 }

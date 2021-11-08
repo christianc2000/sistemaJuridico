@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
         $procuradors = 'public/procuradors';//para direccionar la carpeta
-        $documentoJudicial = 'public/documento_Judicial';
+        $documentoJudicial = 'public/documentos_Judicial';
 
         Storage::deleteDirectory($procuradors);//para eliminar la carpeta
         Storage::makeDirectory($procuradors);//para crear la carpeta

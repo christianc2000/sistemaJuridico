@@ -15,7 +15,7 @@ class DocumentoJudicialSeeder extends Seeder
      */
     public function run()
     {
-        DocumentoJudicial::factory(30)->create()->each(function(DocumentoJudicial $docJud){
+        DocumentoJudicial::factory(50)->create()->each(function(DocumentoJudicial $docJud){
             Documento::factory(2)->create([//creamos 4 factorys documentos por un factory documento judicial
                 'documenteable_id' => $docJud->id,
                 'documenteable_type'=> DocumentoJudicial::class
